@@ -36,7 +36,7 @@ const Recipe = (props) => {
                     </span>
                     </h4>
                     <p className='active-recipe__website'>Website:
-                    <span><a href={activeRecipe.recipe.shareAs}>{activeRecipe.recipe.shareAs}</a></span>
+                    <span><a href={activeRecipe.recipe.shareAs}>{activeRecipe.recipe.shareAs < 20 ? `${activeRecipe.recipe.shareAs}` : `${activeRecipe.recipe.shareAs.substring(0,25)}...`}</a></span>
                     </p>
                     <button className='active-recipe__button'>
                         < Link 
