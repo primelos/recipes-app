@@ -30,6 +30,9 @@ button:focus {
 .App-title {
   font-size: 1.5em;
 }
+button.caro-btn {
+  font-size: 10px;
+}
 
 .recipe_buttons {
   border: solid 2px #e74c3c;
@@ -42,6 +45,17 @@ button:focus {
   font-weight: 500;
   margin-left: 0.7rem;
 }
+.recipe_buttons:hover {
+  opacity: 0.7;
+}
+.recipe_buttons:active {
+  transform:scale(0.9);
+  border: none;
+  background-color: rgba(240, 234, 234, 0.719);
+}
+.recipe_buttons:focus {
+  outline: none;
+}
 
 .recipes__box {
   background: #fff;
@@ -51,7 +65,10 @@ button:focus {
   text-align: left;
   overflow: hidden;
 }
-
+.recipes__box:hover {
+  transform:scale(1.1);
+  
+}
 .recipe__text {
   margin-left: 15px;
 }
@@ -111,8 +128,9 @@ input:-webkit-autofill {
 /******** RECIPE.js ********/
 
 .active-recipe {
+  padding-top: 20px;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .active-recipe__img {
